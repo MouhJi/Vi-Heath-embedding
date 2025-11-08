@@ -48,7 +48,10 @@ Dataset: tmnam20/ViMedAQA(hugging face)
 
 🏗️ Model Training
 
-🔹 Run training: python train.py
+🔹 Run training:
+```
+python train.py
+```
 
 ---
 
