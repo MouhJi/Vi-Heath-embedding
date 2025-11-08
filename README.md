@@ -4,7 +4,6 @@
 ![PyTorch](https://img.shields.io/badge/PyTorch-2.0%2B-red)
 ![Transformers](https://img.shields.io/badge/Transformers-4.35%2B-yellow)
 ![License: MIT](https://img.shields.io/badge/License-MIT-green)
-![Build](https://github.com/yourusername/ViMedEmbedding/actions/workflows/train.yml/badge.svg)
 
 ---
 
