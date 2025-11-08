@@ -64,6 +64,7 @@ Use inference.py to compute embeddings and semantic similarity between question 
 🔹 Run Inference: python inference.py
 
 Example output:
+
 <img width="823" height="70" alt="Screenshot 2025-11-08 101009" src="https://github.com/user-attachments/assets/b4a26a37-c19f-468c-8ce1-d204bb60527b" />
 
 ---
