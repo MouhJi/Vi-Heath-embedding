@@ -20,7 +20,7 @@ class ViMedAQADataset(Dataset):
             max_len (int): max length of input
             use_context_in_anchor (bool): if true, add to context into anchor
         """
-        self.HF_TOKEN = "******************************" #fill your's token in huging face
+        self.HF_TOKEN = "******************************" #fill your token in huging face
         self.data = load_dataset("tmnam20/ViMedAQA", split=split, token=self.HF_TOKEN)
         self.tokenizer = AutoTokenizer.from_pretrained(tokenizer_name, use_fast=True)
         self.max_len = max_len
