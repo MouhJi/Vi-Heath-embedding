@@ -1,4 +1,4 @@
-# 🧠 ViMedEmbedding
+# 🧠 Vi-Heath-Embedding
 
 ![Python](https://img.shields.io/badge/Python-3.9%2B-blue)
 ![PyTorch](https://img.shields.io/badge/PyTorch-2.0%2B-red)
@@ -7,7 +7,7 @@
 
 ---
 
-**ViMedEmbedding** is a **Vietnamese Medical Sentence Embedding** model built on top of **PhoBERT** using **Contrastive Learning**.  
+**Vi-Heath-Embedding** is a **Vietnamese Medical Sentence Embedding** model built on top of **PhoBERT** using **Contrastive Learning**.  
 Its goal is to map **medical questions, answers, and contexts** into the same semantic vector space to measure similarity.
 
 ---
