@@ -22,6 +22,7 @@ Its goal is to map **medical questions, answers, and contexts** into the same se
 ---
 
 ## 📂 Project Structure
+```
 ViMedEmbedding/
 
 │
@@ -35,6 +36,7 @@ ViMedEmbedding/
 ├── inference.py # Inference and cosine similarity testing
 
 └── checkpoints_with_anchor/
+```
 
 Dataset: tmnam20/ViMedAQA(hugging face)
 
