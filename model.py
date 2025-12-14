@@ -5,7 +5,7 @@ from transformers import AutoModel
 class ViMedEmbeddingModel(nn.Module):
     def __init__(self, model_name="vinai/phobert-base", embedding_dim=768):
         super().__init__()
-        self.HF_TOKEN = "*********************" #fill your's token in hugging face
+        self.HF_TOKEN = "*********************" #fill your token in hugging face
         self.backbone = AutoModel.from_pretrained(model_name, token = self.HF_TOKEN)
         self.projection = nn.Linear(self.backbone.config.hidden_size, embedding_dim)
 

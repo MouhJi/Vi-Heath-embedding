@@ -31,7 +31,7 @@ ViMedEmbedding/
 
 ├── model.py # PhoBERT + Linear projection model
 
-├── train.py # Training with Contrastive Loss
+├── train.py # Training with MultipleNegativesRankingLoss
 
 ├── inference.py # Inference and cosine similarity testing
 
@@ -93,7 +93,7 @@ graph TD
     
     E2 --> F2[L2 Normalize]
     
-    F --> G[Contrastive Loss (Cosine Similarity)]
+    F --> G[MultipleNegativesRankingLoss (Cosine Similarity)]
     
     F2 --> G
 
