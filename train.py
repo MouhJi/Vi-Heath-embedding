@@ -6,7 +6,7 @@ from model import ViMedEmbeddingModel
 from data import ViMedAQADataset
 import os
 
-def contrastive_loss(a, b, temperature=0.05):
+def mnrl_loss(a, b, temperature=0.05):
     a, b = F.normalize(a, dim=1), F.normalize(b, dim=1)
     logits = torch.matmul(a, b.T) / temperature
     labels = torch.arange(len(a)).to(a.device)
@@ -46,7 +46,7 @@ def train():
             optimizer.zero_grad()
             a_emb = model(batch["anchor_input_ids"].to(device), batch["anchor_attention_mask"].to(device))
             p_emb = model(batch["positive_input_ids"].to(device), batch["positive_attention_mask"].to(device))
-            loss = contrastive_loss(a_emb, p_emb)
+            loss = mnrl_loss(a_emb, p_emb)
             loss.backward()
             optimizer.step()
 
